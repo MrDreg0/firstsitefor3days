@@ -19,6 +19,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+		<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -26,14 +27,14 @@
  		<div class="container">
  			<div class="row">
  				<div class="col-lg-7">
- 					<img class='header-img' src="img/main-img.png" alt="Монитор">
+ 					<img class='header-img fadeInLeftBig wow' src="img/main-img.png" alt="Монитор">
  				</div>
  				<!-- /.col-7 -->
  				<div class="col-lg-lg5">
- 					<p class='header-pretitle'>Веб-разработчик</p>
- 					<h1 class="header-title">Антон Шумихин</h1>
- 					<p class="header-subtitle">Верстка на HTML/CSS<br>Разработка сайтов под ключ</p>
- 					<div class="header-button-block">
+ 					<p class='header-pretitle wow fadeInRightBig' data-wow-delay="0.1s">Веб-разработчик</p>
+ 					<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Антон Шумихин</h1>
+ 					<p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS<br>Разработка сайтов под ключ</p>
+ 					<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
  						<a href='https://vk.me/ant0osha' class="header-button">Связаться</a>
  						<small>*Это бесплатно</small>
  					</div>
@@ -85,10 +86,10 @@
 				<div class="col-md-4">
 					<div class="social-block">
 						<p>Подпишитесь:</p>
-						<a href="https://www.facebook.com/anton.shumihin.9"><img src="img/social/facebook-logo-button.png" alt="facebook"></a>
-						<a href="https://vk.com/ant0osha"><img src="img/social/vk-social-logotype.png" alt="VK"></a>
-						<a href="#"><img src="img/social/telegram-symbol.png" alt="telegram"></a>
-						<a href="#"><img src="img/social/youtube-symbol.png" alt="youtube"></a>
+						<a href="https://www.facebook.com/anton.shumihin.9" class='wow bounceInDown' data-wow-delay="0.1s"><img src="img/social/facebook-logo-button.png" alt="facebook"></a>
+						<a href="https://vk.com/ant0osha" class='wow bounceInDown' data-wow-delay="0.2s"><img src="img/social/vk-social-logotype.png" alt="VK"></a>
+						<a href="#" class='wow bounceInDown' data-wow-delay="0.3s"><img src="img/social/telegram-symbol.png" alt="telegram"></a>
+						<a href="#" class='wow bounceInDown' data-wow-delay="0.4s"><img src="img/social/youtube-symbol.png" alt="youtube"></a>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -101,6 +102,9 @@
 		</div>
 		<!-- /.container -->
 	</footer>
-
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 </html>
